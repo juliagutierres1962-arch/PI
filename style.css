@@ -1,0 +1,240 @@
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #180c24;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* MENU */
+.navbar {
+    width: 100%;
+    background-color: #2b1240;
+    padding: 18px 30px;
+    border-bottom: 2px solid #713c91;
+}
+
+.navbar-brand {
+    color: #e3c4ff !important;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: auto;
+}
+
+.navbar-toggler {
+    border: 1px solid #c69bea;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem #713c91;
+}
+
+/* MENU LATERAL */
+.offcanvas {
+    background-color: #2b1240;
+    color: #ffffff;
+}
+
+.offcanvas-title {
+    color: #e3c4ff;
+    font-weight: bold;
+}
+
+.offcanvas .nav-link {
+    color: #ffffff;
+    padding: 13px 15px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.offcanvas .nav-link:hover {
+    background-color: #54276f;
+    color: #f0d9ff;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ÁREA DOS CARDS */
+.espaco {
+    width: 100%;
+    padding: 45px 25px;
+    background-color: #180c24;
+}
+
+.espaco .container-fluid {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* COLUNAS */
+.espaco .row {
+    align-items: stretch;
+}
+
+.espaco .row > div {
+    display: flex;
+}
+
+/* CARDS */
+.espaco .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #301740;
+    color: #ffffff;
+    border: 1px solid #754394;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.espaco .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(153, 85, 194, 0.3);
+}
+
+/* IMAGENS DOS CARDS */
+.espaco .card-img-top {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* CONTEÚDO DOS CARDS */
+.espaco .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 18px;
+    padding: 22px 12px;
+    text-align: center;
+}
+
+.espaco .card-title {
+    color: #e4c5ff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* BOTÕES */
+.espaco .btn-solid.theme-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    min-height: 42px;
+    padding: 10px 15px;
+    background-color: #713c91;
+    color: #ffffff;
+    border: 1px solid #b88bd6;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.espaco .btn-solid.theme-primary:hover {
+    background-color: #a66bc7;
+    color: #180c24;
+    border-color: #d8b4f2;
+    transform: scale(1.04);
+}
+
+/* IMAGEM FINAL */
+.rodape {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height:80%;
+}
+
+.rodape img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* TABLETS */
+@media (max-width: 1199px) {
+    .espaco {
+        padding: 35px 20px;
+    }
+
+    .espaco .card-img-top {
+        height: 190px;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .cabecalho {
+        height: 300px;
+    }
+
+    .espaco {
+        padding: 30px 15px;
+    }
+
+    .espaco .card-img-top {
+        height: 200px;
+    }
+}
+
+/* CELULARES PEQUENOS */
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .cabecalho {
+        height: 230px;
+    }
+
+    .espaco .card-img-top {
+        height: 190px;
+    }
+
+    .espaco .card-title {
+        font-size: 19px;
+    }
+}
