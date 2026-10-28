@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+#pagina-home{
+    height: 653px;
+    background-image: url(../img/imagem1.jpg);
+    background-size:cover;
+    color:white
+}
+
+.menu-principal ul{
+    list-style: none;
+    /* usado para remover os marvadores padrões*/
+ 
+}
+
+.menu-principal ul li {
+    display: inline-block;
+    /*faz com que cada item da lista se comporte como um bloco */
+}
+.menu-principal ul li a{
+    color:aliceblue;
+    /*remove p sublinhado do link*/
+    text-transform:uppercase; /*converte otexto para maiusculo*/
+    border:1px solid transparent;
+    transition: 1.06s ease;
+}
+.menu-principal ul li a:hover{
+    background-color:white;
+    color:black;
+}
+.menu-principal ul li .link-ativo{
+    background:white;
+    color:black;  
+}
+.fundo {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center;     /* Centraliza na vertical */
+    min-height: 100vh;       /* Garante que o fundo ocupe 100% da altura da tela */
+    width: 100%;
+}
+
+.corpo {    
+    
+    display: flex;
+    justify-content: center; /* Alinha as figuras no centro */
+    align-items: center;
+    gap: 40px;               /* Cria um espaço uniforme entre cada imagem */
+    flex-wrap: wrap;         /* Garante que o layout se adapte em telas menores */
+    max-width: 1200px;       /* Limita a largura para manter organizado */
+    width: 100%;
+    height: 1200px;
+    padding: 20px;
+    
+    /* Mantendo suas configurações de imagem de fundo */
+    background-image: url("../img/imagem.fundo.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+ 
+
+#pagina-galeria figure img{
+    border:1px solid rgb(61, 60, 60);
+    padding:3px;
+}
+#pagina-galeria figure figcaption{
+    background:orange;
+    text-align:center;
+    color:white;
+    padding:5px;
+}
+
+#foto{
+    padding: 30px;
+    height: 300px;
+    width: 300px;
+}
+ 
+.espaco{
+   height:  80px;
+   background-color: blueviolet;
+}
